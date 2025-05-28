@@ -1,0 +1,85 @@
+.section1 {
+  margin: 40px 0;
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+}
+.section2{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.skills-container,
+.mean-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 32px 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.skills-container img,
+.mean-container img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 2px #000000);
+}
+
+.skills-container img:hover,
+.mean-container img:hover {
+  transform: scale(1.1);
+}
+
+.skills-container i,
+.mean-container i {
+  font-size: 56px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  filter: grayscale(0.2);
+}
+
+.skills-container i:hover,
+.mean-container i:hover {
+  transform: scale(1.15) rotate(-6deg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  filter: grayscale(0);
+}
+
+@media (max-width: 600px) {
+  .skills-container,
+  .mean-container {
+    padding: 18px 8px;
+    gap: 18px;
+  }
+  .skills-container i,
+  .mean-container i {
+    font-size: 36px;
+  }
+}
+ .skill-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 18px;
+}
+
+.skill-item span {
+          margin-top: 8px;
+          font-size: 1rem;
+          color: #333;
+          font-family: 'Arial', sans-serif;
+}

@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+app-header {
+  flex-shrink: 0;
+}
+
+router-outlet {
+  flex: 1 0 auto;
+  display: block;
+}
+
+app-footer {
+  flex-shrink: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.dark-mode {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode,
+.dark-mode body,
+.dark-mode .container,
+.dark-mode .navbar,
+.dark-mode .navbar-nav,
+.dark-mode .nav-link,
+.dark-mode .card,
+.dark-mode .contact-container,
+.dark-mode .skills-container,
+.dark-mode .mean-container,
+.dark-mode .service1,
+.dark-mode .projet1,
+.dark-mode .projet2,
+.dark-mode .projet3,
+.dark-mode .section1,
+.dark-mode .section2,
+.dark-mode app-footer,
+.dark-mode app-header {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+  border-color: #333 !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode li,
+.dark-mode a,
+.dark-mode label {
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .btn,
+.dark-mode .btn-outline-secondary {
+  background: #232323 !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+  background: #333 !important;
+  color: #fff !important;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background: #232323 !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+.dark-mode app-footer {
+  border-top: 1px solid #333 !important;
+}
+
+.dark-mode i,
+.dark-mode .fab,
+.dark-mode .fas {
+  color: #f1f1f1 !important;
+}

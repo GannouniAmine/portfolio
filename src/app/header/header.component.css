@@ -1,22 +1,70 @@
-.navbar .nav-link {
-    display: inline-block;
-    padding: 8px 16px;
-    margin: 0 20px;
-    border-radius: 8px;
-    background-color: white;
-    color: #000000;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+.navbar {
+  padding: 1rem 0;
+}
 
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-  
+
+.navbar .nav-link {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 8px;
+  border-radius: 8px;
+  background-color: white;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
 .navbar .nav-link:hover {
-    background-color: #000000;
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  background-color: #000000;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
-#nav{
-    margin-left: 45%;
+
+/* Styles pour écrans moyens et grands */
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
+
+/* Styles pour mobile */
+@media (max-width: 991px) {
+  .navbar .nav-link {
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    width: auto;
+  }
+}
+
+/* Styles pour très petits écrans */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  
+  .navbar .nav-link {
+    padding: 10px;
+    margin: 3px 0;
+    font-size: 0.9rem;
+  }
 }

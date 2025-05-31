@@ -1,0 +1,24 @@
+footer {
+  background: #f8f9fa !important;
+  color: #333 !important;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #e9ecef;
+  width: 100%;
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+  footer {
+    padding: 12px 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 10px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
